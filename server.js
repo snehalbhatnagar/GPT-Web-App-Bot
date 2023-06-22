@@ -18,6 +18,10 @@ app.get('/', (req, res) => {
   res.render('index', { apiKey: process.env.OPENAI_API_KEY });
 });
 
+app.get('/api/key', (req, res) => {
+  res.json({ apiKey: process.env.OPENAI_API_KEY });
+});
+
 // Route to serve the index.js file
 app.get('/index.js', (req, res) => {
   res.sendFile(path.join(__dirname, 'index.js'));

@@ -30,7 +30,7 @@ recognition.addEventListener('end', () => {
 });
 
 function generateGPTResponse(prompt) {      
-  const apiKey = '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';
+  const apiKey = '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';
 
   fetch('https://api.openai.com/v1/chat/completions', {
     method: 'POST',

@@ -75,7 +75,8 @@
     });
 
     function generateGPTResponse(prompt) {
-        const apiKey = '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'; 
+        //const apiKey = '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';
+        const apiKey = process.env.OPENAI_API_KEY;
       
         fetch('https://api.openai.com/v1/chat/completions', {
           method: 'POST',

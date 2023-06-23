@@ -2,7 +2,7 @@
   "name": "gpt",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ejs",
+  "main": "server.js",
   "engines": {
     "node": "14.x"
   },
